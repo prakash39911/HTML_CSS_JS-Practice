@@ -1,0 +1,147 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100vh;
+  gap: 10px;
+  background-color: #1e1e29;
+}
+
+.heading {
+  font-size: 30px;
+  font-weight: 600;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 25%;
+  color: #9f9f9f;
+  gap: 15px;
+}
+
+.addNotes {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50px;
+  background-color: #19191f;
+  width: 35%;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+
+#form {
+  display: flex;
+  gap: 50px;
+}
+
+.addNotes input {
+  width: 100%;
+  position: relative;
+  left: 10px;
+  font-size: 20px;
+  background-color: rgb(31, 31, 31);
+  color: rgb(134, 134, 134);
+  border: 1px solid rgb(135, 134, 134);
+  border-radius: 4px;
+  padding-left: 3px;
+}
+
+.addNotes button {
+  font-size: 17px;
+  padding: 3px 20px;
+  border: 2px solid black;
+  border-radius: 5px;
+}
+
+#button {
+  background-color: #2e5c67;
+  cursor: pointer;
+}
+
+#clearbutton {
+  background-color: #772525;
+  cursor: pointer;
+}
+.main {
+  width: 35%;
+  height: 60%;
+  background-color: #19191f;
+  border: 5px solid #19191f;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+}
+
+/* Edit ScrollBar Properties */
+
+.main::-webkit-scrollbar {
+  width: 12px; /* Width of the scrollbar */
+}
+
+.main::-webkit-scrollbar-thumb {
+  background: #464545; /* Color of the thumb */
+}
+
+.main::-webkit-scrollbar-track {
+  background: #7f7f7f; /* Color of the track */
+}
+
+.notes {
+  font-size: 20px;
+  padding: 8px 15px;
+  color: #9f9f9f;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.notetext {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.editdelete {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.editdelete button {
+  height: 15px;
+  width: 15px;
+  background-color: transparent;
+  border: 0px solid transparent;
+}
+
+.editdelete img {
+  height: 17px;
+  width: 17px;
+  padding: 0px;
+}
+
+.dot {
+  width: 6px;
+  height: 6px;
+  background-color: #9f9f9f;
+  border-radius: 50%;
+}
+
+#editImg {
+  cursor: pointer;
+}
+
+#deleteImg {
+  cursor: pointer;
+}
